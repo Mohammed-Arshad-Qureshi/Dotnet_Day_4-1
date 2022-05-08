@@ -10,8 +10,13 @@ namespace SnakeLadders
     {
         public void Play()
         {
-            Console.WriteLine("Ready to Play Snake and Ladders");
-            Console.ReadLine();
+            int player1, player2, positionOfPlayer1 = 0, positionOfPlayer2 = 0, end = 100;
+            Random r = new Random();
+            while(positionOfPlayer1 != end && positionOfPlayer2 != end)
+            {
+                Console.WriteLine("Stating with Player 1");
+            }
+
         }
     }
 }
