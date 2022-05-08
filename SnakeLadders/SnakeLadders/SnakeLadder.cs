@@ -10,11 +10,14 @@ namespace SnakeLadders
     {
         public void Play()
         {
-            int player1, player2, positionOfPlayer1 = 0, positionOfPlayer2 = 0, end = 100;
+            int player1=0, player2=0, positionOfPlayer1 = 0, positionOfPlayer2 = 0, end = 101;
             Random r = new Random();
-            while(positionOfPlayer1 != end && positionOfPlayer2 != end)
+           
+            while (true)
             {
-                Console.WriteLine("Stating with Player 1");
+                positionOfPlayer1 = r.Next(1,7);
+                positionOfPlayer2 = r.Next(1,7);
+
             }
 
         }
