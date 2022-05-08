@@ -49,30 +49,30 @@ namespace SnakeLadders
                     positionOfPlayer1 = 90;
                 }
                 //PLAYER TWO
-                //if (positionOfPlayer2 == ladder1)
-                //{
-                //    positionOfPlayer2 = 22;
-                //}
-                //if (positionOfPlayer2 == ladder2)
-                //{
-                //    positionOfPlayer2 = 29;
-                //}
-                //if (positionOfPlayer2 == ladder3)
-                //{
-                //    positionOfPlayer2 = 77;
-                //}
-                //if (positionOfPlayer2 == ladder4)
-                //{
-                //    positionOfPlayer2 = 51;
-                //}
-                //if (positionOfPlayer2 == ladder5)
-                //{
-                //    positionOfPlayer2 = 82;
-                //}
-                //if (positionOfPlayer2 == ladder6)
-                //{
-                //    positionOfPlayer2 = 90;
-                //}
+                if (positionOfPlayer2 == ladder1)
+                {
+                    positionOfPlayer2 = 22;
+                }
+                if (positionOfPlayer2 == ladder2)
+                {
+                    positionOfPlayer2 = 29;
+                }
+                if (positionOfPlayer2 == ladder3)
+                {
+                    positionOfPlayer2 = 77;
+                }
+                if (positionOfPlayer2 == ladder4)
+                {
+                    positionOfPlayer2 = 51;
+                }
+                if (positionOfPlayer2 == ladder5)
+                {
+                    positionOfPlayer2 = 82;
+                }
+                if (positionOfPlayer2 == ladder6)
+                {
+                    positionOfPlayer2 = 90;
+                }
 
                 //-------------------SNAKES-------------------------
                 //player one
@@ -97,52 +97,52 @@ namespace SnakeLadders
                     positionOfPlayer1 = 36;
                 }
                 //PLAYER TWO
-                //if (positionOfPlayer2 == snake1)
-                //{
-                //    positionOfPlayer2 = 20;
-                //}
-                //if (positionOfPlayer2 == snake2)
-                //{
-                //    positionOfPlayer2 = 16;
-                //}
-                //if (positionOfPlayer2 == snake3)
-                //{
-                //    positionOfPlayer2 = 78;
-                //}
-                //if (positionOfPlayer2 == snake4)
-                //{
-                //    positionOfPlayer2 = 52;
-                //}
-                //if (positionOfPlayer2 == snake5)
-                //{
-                //    positionOfPlayer2 = 36;
-                //}
-                if (positionOfPlayer1 > 100)
+                if (positionOfPlayer2 == snake1)
+                {
+                    positionOfPlayer2 = 20;
+                }
+                if (positionOfPlayer2 == snake2)
+                {
+                    positionOfPlayer2 = 16;
+                }
+                if (positionOfPlayer2 == snake3)
+                {
+                    positionOfPlayer2 = 78;
+                }
+                if (positionOfPlayer2 == snake4)
+                {
+                    positionOfPlayer2 = 52;
+                }
+                if (positionOfPlayer2 == snake5)
+                {
+                    positionOfPlayer2 = 36;
+                }
+                if(positionOfPlayer1 > 100)
                 {
                     positionOfPlayer1 = positionOfPlayer1 - player1;
                 }
-                //if(positionOfPlayer2 > 100)
-                //{
-                //    positionOfPlayer2 = positionOfPlayer2 - player2;
-                //}
+                if(positionOfPlayer2 > 100)
+                {
+                    positionOfPlayer2 = positionOfPlayer2 - player2;
+                }
                 if (positionOfPlayer1 < 0)
                 {
                     positionOfPlayer1 = 0;
                 }
-                //if (positionOfPlayer2 < 0)
-                //{
-                //    positionOfPlayer2 = 0;
-                //}
+                if (positionOfPlayer2 < 0)
+                {
+                    positionOfPlayer2 = 0;
+                }
                 if (positionOfPlayer1 == 100)
                 {
                     Console.WriteLine("Player One Won");
                     break;
                 }
-                //if(positionOfPlayer2 == 100)
-                //{
-                //    Console.WriteLine("Player Two Won");
-                //    break;
-                //}
+                if(positionOfPlayer2 == 100)
+                {
+                    Console.WriteLine("Player Two Won");
+                    break;
+                }
 
             }
             Console.WriteLine($"Number of Dice rolled {count}");
