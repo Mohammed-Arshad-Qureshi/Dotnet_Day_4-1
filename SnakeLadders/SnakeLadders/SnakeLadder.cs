@@ -117,25 +117,34 @@ namespace SnakeLadders
                 {
                     positionOfPlayer2 = 36;
                 }
-                if(positionOfPlayer1 < 0)
+                if(positionOfPlayer1 > 100)
+                {
+                    positionOfPlayer1 = positionOfPlayer1 - player1;
+                }
+                if(positionOfPlayer2 > 100)
+                {
+                    positionOfPlayer2 = positionOfPlayer2 - player2;
+                }
+                if (positionOfPlayer1 < 0)
                 {
                     positionOfPlayer1 = 0;
                 }
-                if(positionOfPlayer2 < 0)
+                if (positionOfPlayer2 < 0)
                 {
                     positionOfPlayer2 = 0;
                 }
-                if(positionOfPlayer1 == 100)
+                if (positionOfPlayer1 == 100)
                 {
+                    Console.WriteLine("Player One Won");
                     break;
                 }
                 if(positionOfPlayer2 == 100)
                 {
+                    Console.WriteLine("Player Two Won");
                     break;
                 }
 
             }
-            Console.WriteLine(count);
             Console.ReadLine();
 
         }
