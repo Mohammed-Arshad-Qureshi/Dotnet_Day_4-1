@@ -10,17 +10,19 @@ namespace SnakeLadders
     {
         public void Play()
         {
-            int player1=0, player2=0, positionOfPlayer1 = 0, positionOfPlayer2 = 0, end = 101;
+            int player1=0, player2=0, positionOfPlayer1 = 0, positionOfPlayer2 = 0, end = 100,count = 0;
             Random r = new Random();
             int ladder1 = 4, ladder2 = 10, ladder3 = 14, ladder4 = 33, ladder5 = 64, ladder6 = 74;
             int snake1 = 40, snake2 = 50, snake3 = 81, snake4 = 90, snake5 = 95;
             while (true)
             {
+                
                 player1 = r.Next(1,7);
                 player2 = r.Next(1,7);
+                count++;
                 positionOfPlayer1 = player1 + positionOfPlayer1;
                 positionOfPlayer2 = player2 + positionOfPlayer2;
-                //-------------------LADDERS--------------
+                //-------------------LADDERS-----------------
                 //PLAYER ONE
                if(positionOfPlayer1 == ladder1)
                 {
@@ -115,8 +117,26 @@ namespace SnakeLadders
                 {
                     positionOfPlayer2 = 36;
                 }
+                if(positionOfPlayer1 < 0)
+                {
+                    positionOfPlayer1 = 0;
+                }
+                if(positionOfPlayer2 < 0)
+                {
+                    positionOfPlayer2 = 0;
+                }
+                if(positionOfPlayer1 == 100)
+                {
+                    break;
+                }
+                if(positionOfPlayer2 == 100)
+                {
+                    break;
+                }
 
             }
+            Console.WriteLine(count);
+            Console.ReadLine();
 
         }
     }
